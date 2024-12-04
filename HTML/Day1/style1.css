@@ -1,0 +1,38 @@
+html{
+    background-color:pink;
+}
+#p1{
+    color: blueviolet;
+    text-align: end;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    text-align: center;
+    
+}
+
+#diff-size{
+    font-size: small;
+}
+#diff-size2{
+    font-size: larger;
+}
+
+#diff-font{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#diff-color{
+    color: red;
+}
+
+#img-size{
+    display: inline-block;
+    height: 60px;
+    width: 130px;
+}
+
+
+
