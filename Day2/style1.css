@@ -1,0 +1,71 @@
+html{
+    background-color:pink;
+}
+#p1{
+    color: blueviolet;
+    text-align: end;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    text-align: center;
+    
+}
+
+#diff-size{
+    font-size: small;
+}
+#diff-size2{
+    font-size: larger;
+}
+
+#diff-font{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#diff-color{
+    color: red;
+}
+
+#img-size{
+    display: inline-block;
+    height: 60px;
+    width: 130px;
+}
+
+form{
+    text-align: center;
+    display: inline-block;
+    margin: 40px;
+    margin-top: 10px;
+}
+
+#caption{
+    font-size:1.5em !important;
+    font-weight: 500;
+}
+
+table,td{
+    text-align: left;
+    border: 4px solid rgb(155, 155, 155);
+    border-collapse: collapse;
+    padding: 8px;
+}
+table table , td td{
+    border-style: hidden;
+}
+input[type = 'text'],input[type = 'password'],input[type = 'date'],textarea,select{
+    width: 100%;
+}
+input[type='submit'],input[type='reset']{
+    margin: 0px 40px;
+}
+
+
+.subTitle{
+    text-align: center;
+}
+
+
+

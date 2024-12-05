@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style1.css" rel="stylesheet"/>
+    <title>Registeration</title>
+</head>
+<body>
+    <div>
+        <label id="caption"><u>Registeration Form</u></label><br>
+        <form action="page2.html" method="get">
+            <table>
+                <tr>
+                    <td><b>First Name</b></td>
+                    <td><input type="text" placeholder="Enter your first name"></td>
+                </tr>
+                    
+                <tr>
+                    <td><b>Last Name</b></td>
+                    <td><input type="text" placeholder="Enter your last name"></td>
+                </tr>
+
+                <tr>
+                    <td><b>Email</b></td>
+                    <td><input type="text" placeholder="Enter your email"></td>
+                </tr>
+
+                <tr>
+                    <td><b>Password</b></td>
+                    <td><input type="password" placeholder="Enter your password"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><b>Geder</b></td>
+                    <td ><input name="r" id="r1" type="radio" value="female"><label for="r1">Female</label></td>
+
+                </tr>
+
+                <tr>
+                    <td><input name="r" id="r2" type="radio" value="male"><label for="r2">Male</label></td>
+                </tr>
+
+                <tr>
+                    <td><b>country</b></td>
+                    <td><select>
+                        <option value="">Select a Country...</option>
+                        <optgroup label="Africa">
+                            <option value="Egypt">Egypt</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="">Libya</option>
+                            <option value="">Tunisia</option>
+                            <option value="">Moroco</option>
+                        </optgroup>
+                        <optgroup label="Europe" disabled>
+                            <option value="">Italy</option>
+                            <option value="">Sweden</option>
+                            <option value="">Spain</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="">Palestine</option>
+                            <option value="">South Korea</option>
+                            <option value="">India</option>
+                        </optgroup>
+                        
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <td><b>BirthDay</b></td>
+                    <td><input type="date"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class = "subTitle"><b><u>Interests</u></b></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <table>
+                            <tr> 
+                                <td> <input type="checkbox" id="c1"><label for="c1">Sports</label></td>
+                                <td><input type="checkbox" id="c2"><label for="c2">Music</label></td>
+                                <td><input type="checkbox" id="c3"><label for="c3">Fashion</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="c4"><label for="c4">Reading</label></td>
+                                <td><input type="checkbox" id="c5"><label for="c5">Shopping</label></td>
+                                <td><input type="checkbox" id="c6"><label for="c6">Movies</label></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class = "subTitle"><b><u>Bio</u></b></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><textarea name="" id=""></textarea></td>
+                </tr>
+
+                <tr>
+                    <td class = "subTitle" colspan="2">
+                        <input type="submit" value="Register...">
+                        <input type="reset" value="Clear...">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>
