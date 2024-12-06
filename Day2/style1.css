@@ -68,4 +68,15 @@ input[type='submit'],input[type='reset']{
 }
 
 
-
+fieldset{
+    margin: 15%;
+    padding: 4%;
+    text-align: start;
+    border-color:  blue;
+    border-width: 5px;
+}
+legend{
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+}
