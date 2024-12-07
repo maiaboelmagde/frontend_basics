@@ -10,15 +10,25 @@
     <div>
         <fieldset>
             <legend>Login</legend>
-            <label for="#user_name">User name</label><br>
-            <input type="text" placeholder="Enter User name" id="user_name"><br>
-            <label for="#user_pass">User name</label><br>
-            <input type="text" placeholder="Enter User Password" id="user_pass"><br>
-
-            <input type="radio" name="radio">
-            <label for="radio">Remember me</label><br>
-
-            <input type="submit" name="" id="" value="Sign In..">
+            <form action="page2.html" method="post" id="login_form">
+                <table id="login_table">
+                <tr><td>
+                    <label for="#user_name" class="text1">User name:</label><br>
+                    <input type="text" placeholder="Enter User name" id="user_name"><br>
+                </td></tr>
+                <tr><td>
+                    <label for="#user_pass" class="text1">User password:</label><br>
+                    <input type="text" placeholder="Enter User Password" id="user_pass"><br>
+                </td></tr>
+                <tr><td>
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox" class="text1">Remember me</label><br>
+                </td></tr>
+                <tr><td class="centerIt">
+                    <input type="submit" name="" id="sign_in_button" value="Sign In..">
+                </td></tr>
+            </table>
+            </form>
 
         </fieldset>
     </div>
