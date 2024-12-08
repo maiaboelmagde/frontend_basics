@@ -1,3 +1,5 @@
-***Day1*** : HTML & CSS Revision.
+***Day01*** : HTML & CSS Revision.
 
-***Day2*** : HTML & CSS Revision.
+***Day02*** : HTML & CSS Revision.
+
+***Day03*** : Intro to Javascript ....
