@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th Task Simple Calculator</title>
+    <style>
+        table{
+            
+        }
+        table{
+            border-style: double;
+            border-color: gray;
+            border-width: 5px;
+            text-align: center;
+            background-color: rgb(215, 214, 214);
+            padding: 4px;
+            font-size: x-large;
+            display: inline-block;
+        }
+        th{
+            background-color: gray;
+        }
+        td{
+            border-style: double;
+        }
+        #screen{
+            text-align: left;
+            background-color: aliceblue;
+        }
+        div{
+            display: inline-block;
+        }
+        body{
+            display: flex;
+        }
+        #div2{
+            padding: 30px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <table>
+        <tr>
+            <th colspan="4">JavaScript Calculator</th>
+        </tr>
+        <tr>
+            <td id="screen" colspan="3"></td>
+            <td id="=">=</td>
+        </tr>
+        <tr>
+            <td id="1">1</td>
+            <td id="2">2</td>
+            <td id="3">3</td>
+            <td id="+">+</td>
+        </tr>
+        <tr>
+            <td id="4">4</td>
+            <td id="5">5</td>
+            <td id="6">6</td>
+            <td id="-">-</td>
+        </tr>
+        <tr>
+            <td id="7">7</td>
+            <td id="8">8</td>
+            <td id="9">9</td>
+            <td id="*">*</td>
+        </tr>
+        <tr>
+            <td id="c">C</td>
+            <td id="0">0</td>
+            <td id=".">.</td>
+            <td id="/">/</td>
+        </tr>
+    </table>
+    </div>
+<div id="div2">
+    <label for="#formula">Formula: </label>
+    <input type="text" disabled value="0" id="formula">
+</div>
+    <script src="script4.js"></script>
+</body>
+</html>
