@@ -36,4 +36,3 @@ document.querySelectorAll("td").forEach((button) => {
         }
     });
 });
-
