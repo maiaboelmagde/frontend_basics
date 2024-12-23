@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="cookies.js"></script>
+    <script>
+        try {
+            setCookie("test", new Date("2025-12-31"));
+            console.log(getCookie("test")); // Output: value
+            console.log(allCookieList()); // Output: Object with all cookies
+            console.log(hasCookie("test")); // Output: true
+            deleteCookie("test");
+        } catch (error) {
+            console.error(error.message);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving pic</title>
+    <style>
+        div{
+            border-color: red;
+            border-width: thick;
+            border-style: double;
+            width: 400px;
+            height: 400px;
+            display: flex;
+        }
+        button{
+            margin: 5px;
+        }
+        img{
+            position: absolute;
+            display: inline-block;
+        }
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="img1" src="assets/movingPic/icon1.gif" alt="">
+        <img id="img2" src="assets/movingPic/icon2.gif" alt="">
+        <img id="img3" src="assets/movingPic/TOP.JPG" alt="">
+    </div>
+    <button>Move</button>
+    <button>Reset</button>
+
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    
+    <script src="script4.js"></script>
+</body>
+</html>

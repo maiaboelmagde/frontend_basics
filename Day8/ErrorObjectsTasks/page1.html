@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        label{
+            font-weight: 800;
+            padding: 30px ;
+            display: inline-block;
+        }
+        button{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <label for="#text1">Enter your name: </label>
+    <input type="text" id="text1" name="name"><br>
+    <label for="#text2">Enter your age: </label>
+    <input type="text" id="text2" name="age"><br>
+    <label for="">Select your Gender:</label><br>
+    <div>
+        <input type="radio" name="gender" value="male">
+        <img src="assets/cookies/1.jpg" alt="">
+    </div>
+    <div>
+        <input type="radio" name="gender" value="female">
+        <img src="assets/cookies/2.jpg" alt="">
+    </div>
+    <br>
+    <label for="#color">Select your Fav color</label>
+    <select name="favColor" id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="black">Black</option>
+    </select>
+    <br>
+    <button>register</button>
+    <script src="cookies.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

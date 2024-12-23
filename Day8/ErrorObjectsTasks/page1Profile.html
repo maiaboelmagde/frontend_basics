@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+
+        }
+        .greeting {
+            font-size: 1.5em;
+            padding-top: 70px ;
+        }
+        div{
+            display: inline-block;
+        }
+    </style>
+    <script src="cookies.js"></script>
+</head>
+<body>
+    <img id="profile-pic" class="profile-pic" alt="Profile Picture">
+    <div>
+    <div class="greeting" id="greeting"></div><br>
+    <div class="visits" id="visits" ></div>
+</div>
+
+    <script>
+        
+        const name = getCookie("name");
+        const gender = getCookie("gender");
+        const favColor = getCookie("favColor");
+        const visits = getCookie("visits");
+        console.log(visits);
+        const profilePic = document.getElementById("profile-pic");
+        profilePic.src = gender === "male" ? "assets/cookies/1.jpg" : "assets/cookies/2.jpg";
+
+        const greetingDiv = document.getElementById("greeting");
+        greetingDiv.innerHTML = `Welcome, <b style="color:${favColor};" >${name}</b>!`;
+        
+
+        const visitsDiv = document.getElementById("visits");
+        visitsDiv.innerHTML = `You have visited this side <b style="color:${favColor};" >${visits}</b> times :) .`;
+        
+    </script>
+</body>
+</html>
