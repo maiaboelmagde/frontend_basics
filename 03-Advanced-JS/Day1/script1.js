@@ -7,6 +7,13 @@ var LnkdLstObj ={
             this.data.unshift({val:value});
         }
     },
+    push: function(value){
+        if(this.data.length!=0 && this.data[this.data.length-1]>value){
+            throw "it would cause an mistake in sequence";
+        }else{
+            this.data.push({val:value});
+        }
+    },
     pushVal:function (value){
         while(isNaN(value)){
             value = Number(prompt("Enter a number"));
