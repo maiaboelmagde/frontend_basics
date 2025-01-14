@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 100px 0px;
+            font-family:cursive;
+        }
+       
+        div{
+            text-align: center;
+            padding: 20px;
+        }
+        
+        #buttons, #showing{
+            display: inline-flex;
+            text-align: center;
+        }
+        button{
+            margin: 0px 0px 6px 0px;
+            width: 100px;
+            height: 60px;
+            background-color: rgb(199, 68, 90);
+            color: whitesmoke;
+            font-size: 1.2rem;
+            font-family:cursive;
+            border-radius: 10px;
+            box-shadow: 0px 5px  rgb(199, 68, 90);
+        }
+
+        #About, #Complain{
+            width: 380px;
+            height: 290px;
+            box-shadow: 5px 5px 5px 5px rgb(189, 187, 187) ;
+
+        }
+
+        #left,#right{
+            width: 20px;
+            height: 20px;
+            margin: 150px 20px;
+        }
+        #imgee{
+            width: 300px;
+            height: 300px;
+        }
+        #Galary{
+            display: flex;
+        }
+        #Services{
+            display: inline-block;
+            padding: 20px;
+        }
+        #items{
+            padding: 0px;
+        }
+        #items div{
+            background-color: rgb(199, 68, 90);
+            width: 100px;
+            height: 10px;
+            font-family:cursive;
+            border-radius: 10px;
+        }
+        textarea{
+            height: 100px;
+            width: 250px;
+        }
+        form *{
+            padding: 5px;
+            margin: 5px;
+        }
+        #form2 *{
+            margin:40px  5px;
+        }
+        #form2 input[type="button"]{
+            position: relative;
+            top: 20px;
+        }
+        form input[type="button"]{
+            box-shadow: 2px 3px  rgb(199, 68, 90);
+        }
+        #send, #Backbtn{
+            width: 80px;
+            background-color:rgb(199, 68, 90);
+            color: white ;
+            border-radius: 10px;
+        }
+
+        #com_text, #name_text, #email_text, #phone_text{
+            font-weight: 900;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="buttons">
+        <div><button id="aboutBut">About</button></div>
+        <div><button id="GallaryBut">Gallary</button></div>
+        <div id="Services">
+            <button id="ServicesBut">Services</button>
+            <div id="items">
+                <div id="item1">
+                    item #1
+                </div>
+                <div id="item2">
+                    item #2
+                </div>
+                <div id="item3">
+                    item #3
+                </div>
+            </div>
+        </div>
+        <div><button id="ComplainBut">Complain</button></div>
+    </div>
+<br>
+    <div id="showing">
+        <div id="About">
+            <p>Story About snow man</p>
+        </div>
+        <div id="Galary">
+            <img src="Assets/left.png" alt="leftArrow" id="left">
+            <img src="Assets/1.jpg" alt="" id="imgee">
+            <img src="Assets/right.png" alt="" id="right">
+        </div>
+        <div id="Complain">
+            <form action="" id="form1">
+                <label for="#name">Name</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="#email">Email</label>
+                <input type="text" name="email" id="email"><br>
+                <label for="#phone">Phone</label>
+                <input type="text" name="phone" id="phone"><br>
+                <label for="#complain">complain</label><br>
+                <textarea name="complain" id="complain"></textarea> <br>
+                <input type="button" name="send" id="send" value="send" >
+            </form>
+            <form id="form2">
+                <label for="">Your complain is </label>
+                <label for="" id="com_text"></label><br>
+                <label for="">Your name is</label>
+                <label for="" id="name_text"></label><br>
+                <label for="">Your email is </label>
+                <label for="" id="email_text"></label><br>
+                <label for="">Your phone is </label>
+                <label for="" id="phone_text"></label><br><br>
+                <input type="button" value="Back to edit" name="" id="Backbtn">
+
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
