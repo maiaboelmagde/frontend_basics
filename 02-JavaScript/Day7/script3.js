@@ -12,12 +12,12 @@ function displayTimer(){
 
     timer = setInterval(function(){
         document.getElementById("data").dispatchEvent(custEvent);
-    },30000);
+    },3000);
 }
 
 timer = setInterval(function(){
     document.getElementById("data").dispatchEvent(custEvent);
-},30000);
+},3000);
 
 document.getElementById('data').addEventListener("input", displayTimer);
 document.getElementById('data').addEventListener("change", displayTimer);
