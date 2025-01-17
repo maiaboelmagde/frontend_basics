@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        .innerDiv{
+            display: inline-block;
+        }
+        .innerDiv:last-of-type{
+            text-align:right;
+            padding-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="innerDiv">
+            <h1>change the 3 color range above and abserve my color change</h1>
+        </div>
+        <div class="innerDiv">
+            <span>RED</span> <input type="range" id="redTab"><br>
+            <span>BLUE</span> <input type="range" id="blueTab"><br>
+            <span>GREEN</span> <input type="range" id="greenTab"><br>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Task</title>
+    <style>
+        #container1 {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: solid 2px red;
+            height: 50vw;
+            width: 90vw;
+        }
+
+        #div1 {
+            border-radius: 50% 50% 0% 0%;
+            width: 30vw;
+            height: 30vw;
+            background: conic-gradient(
+                from -90deg,
+                yellow 0%,
+                green 35%,
+                blue 40%,
+                blue 50%,
+                transparent 50%
+            );
+            position: relative;
+            right: -15vw;
+        }
+        #div2{
+            border-radius: 0% 0% 50% 50%;
+            width: 30vw;
+            height: 30vw;
+            background: conic-gradient(
+                from -90deg,
+                transparent 0%,
+                transparent 50%,
+                red 50%,
+                orange 70%,
+                yellow 85%,
+                yellow 100%
+            );
+            position: relative;
+            left: -15vw;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container1">
+        <div id="div1"></div><br>
+        <div id="div2"></div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

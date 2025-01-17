@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Task</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="video-div">
+        <div id="place-holder"></div>
+        <div id="right_part">
+            <video src="Assets/frozen.mp4"></video>
+            <br>
+            <div id="controls">
+                <input type="range" id="DurationTab"> <span>00:00</span>
+                <br>
+                <div id="controls_flex">
+                    <div id="controls_right">
+                        <button id="playbtn">play</button>
+                        <button id="stopbtn">stop</button>
+                        <button id="leftbtn"><<</button>
+                        <button id="prevbtn"><</button>
+                        <button id="nextbtn">></button>
+                        <button id="rightbtn">>></button>
+                        <button id="fullscreenBtn">Fullscreen</button>
+                    </div>
+                    <div id="speedDiv">
+                        <button id="speedbtn">speed</button><br>
+                        <input type="range" name="" id="speedTab">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="volume_div">
+            <div id="VolumeTab_div"><input type="range" id="VolumeTab"></div>
+            <div id="volume_icon_div"><img src="Assets/volume_icon.png" alt="" id="volume_icon"></div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>

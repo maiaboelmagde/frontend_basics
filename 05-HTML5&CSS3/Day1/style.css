@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+video {
+    width: 70vw;
+    height: 40vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#video-div {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0px;
+}
+
+#volume_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 30vw;
+}
+
+#DurationTab {
+    width: 70vw;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#DurationTab:hover {
+    opacity: 1;
+}
+
+
+
+#VolumeTab {
+    transform: translate(-30%, -500%) rotate(-90deg);
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+#VolumeTab:hover {
+    opacity: 1;
+}
+
+
+#volume_icon {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding-right: 80px;
+}
+
+#volume_icon:hover {
+    transform: scale(1.1);
+}
+
+#volume_icon_div {
+    text-align: start;
+    padding-left: 20px;
+}
+
+#speedTab {
+    display: none;
+    width: 100px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+#speedTab:hover {
+    opacity: 1;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+#controls_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8vw;
+    gap: 10px;
+}
+
+#controls_right {
+    display: inline-block;
+}
+
+#speedDiv {
+    display: inline-block;
+    text-align: start;
+    padding-left: 3px;
+}
+
+#place-holder {
+    width: 6vw;
+}

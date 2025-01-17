@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        svg {
+            width: 100vw;
+            height: 100vh;
+        }
+        line {
+            stroke: black;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <svg>
+        <line id="line1" x1="0" y1="0" x2="0" y2="0" />
+        <line id="line2" x1="0" y1="0" x2="0" y2="0" />
+        <line id="line3" x1="0" y1="0" x2="0" y2="0" />
+        <line id="line4" x1="0" y1="0" x2="0" y2="0" />
+    </svg>
+
+    <script>
+        const widthDim = document.getElementsByTagName("svg")[0].getBoundingClientRect().width;
+        const heightDim = document.getElementsByTagName("svg")[0].getBoundingClientRect().height;
+
+        const diagonalLength = Math.sqrt(widthDim * widthDim + heightDim * heightDim);
+
+        const segmentLength = diagonalLength / 4;
+
+        const lines = document.getElementsByTagName("line");
+
+        function animateLine(index, startX, startY, endX, endY) {
+            setTimeout(() => {
+                lines[index].setAttribute("x1", startX);
+                lines[index].setAttribute("y1", startY);
+                lines[index].setAttribute("x2", endX);
+                lines[index].setAttribute("y2", endY);
+
+                lines[index].style.strokeDashoffset = 0;
+
+                if (index === 3) {
+                    setTimeout(() => {
+                        alert("Animation Complete!"); 
+                    }, 1000); 
+                }
+            }, 1000 * index);
+        }
+
+        for (let i = 0; i < 4; i++) {
+            const startX = (i * widthDim) / 4;
+            const startY = (i * heightDim) / 4;
+            const endX = ((i + 1) * widthDim) / 4;
+            const endY = ((i + 1) * heightDim) / 4;
+
+            animateLine(i, startX, startY, endX, endY);
+        }
+    </script>
+</body>
+</html>
