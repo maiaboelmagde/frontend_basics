@@ -1,0 +1,45 @@
+body{
+    color: aliceblue;
+    width: 99vw;
+    height: 40.5vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    text-align: center;
+}
+#Header{
+    height: 10vw;
+    width: 98vw;
+    background-color: rgb(64, 27, 130);
+}
+#body{
+    display: flex;
+    width: 98vw;
+    height: 20vw;
+    gap:0.25vw;
+    flex-wrap: wrap;
+}
+#SideNav{
+    flex-grow: 1;
+    background-color: rgb(174, 82, 28);
+    min-width: 300px;
+}
+#MainContent{
+    flex-grow: 2;
+    background-color: rgb(50, 111, 50);
+    min-width: 300px;
+
+}
+#SideBar{
+    flex-grow: 1;
+    background-color: rgb(174, 82, 28);
+    min-width: 300px;
+
+
+}
+#Footer{
+    height: 10vw;
+    width: 98vw;
+    background-color: rgb(64, 27, 130);
+}

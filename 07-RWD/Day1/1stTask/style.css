@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+}
+#tagTab{
+    background-color: rgb(226, 219, 219);
+    padding: 2%;
+    display: flex;
+    gap:20%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#tagTab span{
+    font-size: x-large;
+    padding: 10px;
+    min-width: 100px;
+}
+
+#body{
+    display: flex; 
+    padding: 10px 2%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#body>div{
+    border: solid black 2px;
+    width: 49%;
+    min-width: 550px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.footer{
+    background-color: rgb(226, 219, 219);
+    width: 100%;
+}
