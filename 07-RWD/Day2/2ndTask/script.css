@@ -1,0 +1,90 @@
+html{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+}
+body{
+    width: 90vw;
+    height: 90vh;
+    justify-items: center;
+    align-content: center;
+    color: aliceblue;
+}
+#parent{
+    width: 30vw;
+    height: 60vh;
+    background-color: aqua;
+    animation: Rooootate 5s linear infinite;
+    animation-play-state: paused;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#parent:hover{
+    animation-play-state: running;
+}
+
+
+
+#div1{
+    background-color: blueviolet;
+    margin: 1px;
+
+    grid-column: span 2;
+}
+#div2{
+    background-color: blueviolet;
+    margin: 1px;
+
+    grid-row: span 2;
+}
+#div3{
+    background-color: blueviolet;
+    margin: 1px;
+
+    grid-row: span 2;
+}
+#div4{
+    background-color: blueviolet;
+    margin: 1px;
+
+}
+#div5{
+    background-color: blueviolet;
+    margin: 1px;
+
+    grid-column: span 2;
+}
+#parent div {
+    transition: background-color 2s ease-in-out;
+}
+
+
+#parent:hover #div1 {
+    background-color: yellow;
+}
+#parent:hover #div2 {
+    background-color: green;
+}
+#parent:hover #div3 {
+    background-color: orange;
+}
+
+#parent:hover #div5 {
+    background-color:brown;
+}
+
+
+
+@keyframes Rooootate {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+
+}
+

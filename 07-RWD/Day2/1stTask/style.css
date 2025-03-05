@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    color: aliceblue;
+}
+section{
+    height: 40vw;
+    width: 90vw;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    grid-template-areas:
+    "header header header"
+    "SideBar main SideNav"
+    "footer footer footer"
+    ;
+
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+#right{
+    grid-area: SideBar;
+    background-color: burlywood;
+}
+article{
+    grid-area: main;
+    background-color:coral;
+}
+#left{
+    grid-area: SideNav;
+    background-color: burlywood;
+}
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+@media (max-width : 601px){
+    section{
+        grid-template:
+        "header" 1fr
+        "SideBar" 2fr
+        "main" 3fr
+        "SideNav" 2fr
+        "footer" 1fr
+        ;
+    }
+}
