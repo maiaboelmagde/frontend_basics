@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome <span id="clientName">{name}</span>,</h2>
+    <p>Your entered data as follows:</p>
+    <ul>
+      <li><strong>Mobile Number:</strong> <span id="clientMobile">{mobile}</span></li>
+      <li><strong>Email:</strong> <span id="clientEmail">{email}</span></li>
+      <li><strong>Address:</strong> <span id="clientAddr">{addr}</span></li>
+    </ul>
+
+    <button id="loadClientsBtn">Load All Clients</button>
+    <div id="clientsList"></div>
+  </div>
+
+  <script>
+    document.getElementById('loadClientsBtn').addEventListener('click', async () => {
+      try {
+        const res = await fetch('/clients');
+        const clients = await res.json();
+        const container = document.getElementById('clientsList');
+        container.innerHTML = '<h3>All Clients:</h3>';
+
+        clients.forEach((client, index) => {
+          container.innerHTML += `
+            <div class="clientCard">
+              <strong>Client ${index + 1}</strong><br>
+              Name: ${client.name}<br>
+              Mobile: ${client.mobile}<br>
+              Email: ${client.email}<br>
+              Address: ${client.addr}<br>
+            </div><hr>`;
+        });
+      } catch (error) {
+        console.error('Error loading clients:', error);
+      }
+    });
+  </script>
+</body>
+</html>
