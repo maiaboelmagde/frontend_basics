@@ -34,6 +34,25 @@ fs.readFile('clients.json',(err, data)=>{
     }
 });
 
+let Icon = '';
+fs.readFile('../Client-Side/Icons/favicon.ico', (err, data)=>{
+    if(err) 
+        console.log('7asal Error fe Icon.ico')
+    else {
+        Icon = data;
+    }
+});
+
+let userIcon = '';
+fs.readFile('../Client-Side/Icons/user.png', (err, data)=>{
+    if(err) 
+        console.log('7asal Error fe user.png')
+    else {
+        console.log('Icon.ico exist')
+        userIcon = data;
+    }
+});
+
 http.createServer((req,res)=>{
     switch (req.method) {
         case 'GET':
@@ -68,9 +87,23 @@ http.createServer((req,res)=>{
                         }
                     });
                     break;
+
+                case '/Icons/favicon.ico':
+                case '/Client-Side/Icons/favicon.ico':
+                    res.setHeader("content-type", "image/vnd.microsoft.icon");
+                    res.write(Icon);
+                    res.end();
+                    break;
+                case '/Icons/user.png':
+                case '/Client-Side/Icons/user.png':
+                    res.setHeader("content-type", "image/vnd.microsoft.icon");
+                    res.write(userIcon);
+                    res.end();
+                    break;
                 default:
                     res.writeHead(404);
                     res.write(`Can't found this  Route`);
+                    res.end();
                     break;
             }
             break;
