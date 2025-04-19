@@ -1,0 +1,13 @@
+<nav>
+  <button (click)="setFirstPage()">Page 1</button>
+  <button (click)="setSecondPage()">Page 2</button>
+</nav>
+
+<div id="MainDiv">
+  <div [hidden]="showPage !== 'page1'">
+    <app-page1></app-page1>
+  </div>
+  <div [hidden]="showPage !== 'page2'">
+    <app-page2></app-page2>
+  </div>
+</div>

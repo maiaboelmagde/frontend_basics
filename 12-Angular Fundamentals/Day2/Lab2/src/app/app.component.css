@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    background-color: #01274f;
+    border-bottom: 2px solid #023e7d;
+}
+  
+nav button {
+    background-color: transparent;
+    border: none;
+    padding: 1%;
+    width: 49.5%;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color:#0664c7;
+}
+  
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+  
