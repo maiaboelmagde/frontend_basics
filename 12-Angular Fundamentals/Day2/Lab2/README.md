@@ -1,4 +1,9 @@
-# Lab2
+# Lab2 :
+Interactive input page and Image slider page ...
+
+https://github.com/user-attachments/assets/a9cc083c-dd02-4f3d-a218-8dc8405650da
+
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
