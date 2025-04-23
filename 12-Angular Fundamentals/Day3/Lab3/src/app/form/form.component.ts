@@ -16,13 +16,10 @@ export class FormComponent {
 
   @Output() passDataEvent = new EventEmitter();
 
-  showNameError = false;
-  showAgeError = false;
+  PressSubmit:boolean = false;
 
   passData() {
-    this.showNameError = !this.validateName();
-    this.showAgeError = !this.validateAge();
-    
+    this.PressSubmit = true;
     if(this.validateName() && this.validateAge()){
       this.passDataEvent.emit(this.Persons);
       let personObj = {name:this.name,age:this.age};
@@ -33,14 +30,17 @@ export class FormComponent {
 
       this.name = '';
       this.age = '';
+
+      this.PressSubmit=false;      
     }
 
   }
+
   validateName(){
-    return this.name.length >=3;
+    return ((this.name.length >=3 )  || !this.PressSubmit);
   }
 
   validateAge(){
-    return +this.age > 0 && this.age !== '' && +this.age <30;
+    return ((+this.age > 0 && +this.age <30) || !this.PressSubmit);
   }
 }

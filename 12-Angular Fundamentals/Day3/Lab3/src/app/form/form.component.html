@@ -2,13 +2,19 @@
     <form id="form-container">
         <p>Name : </p>
         <input type="text" placeholder="type the name here" [(ngModel)]="name" name="name">
-        <div *ngIf="showNameError">
-            <p style="color: red;"> Invalid Name !!</p>
+        <div *ngIf="!validateName()" class="validationMsg">
+            <p style="color: red;"> Invalid Name !! should be longer than 3 letters</p>
+        </div>
+        <div *ngIf="validateName() && PressSubmit" class="validationMsg">
+            <p style="color: green;"> valid Name </p>
         </div>
         <p>Age : </p>
         <input type="text" placeholder="type the age here" [(ngModel)]="age" name="age">
-        <div *ngIf="showAgeError">
-            <p style="color: red;"> Invalid Age !!</p>
+        <div *ngIf="!validateAge()" class="validationMsg">
+            <p style="color: red;"> Invalid Age !! should be between 0 & 30 </p>
+        </div>
+        <div *ngIf="validateAge() && PressSubmit" class="validationMsg">
+            <p style="color: green;"> valid Age</p>
         </div>
         <input type="submit" (click)="passData()">
     </form>
