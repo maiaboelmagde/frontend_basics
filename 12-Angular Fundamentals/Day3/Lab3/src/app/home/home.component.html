@@ -1,0 +1,15 @@
+<div id="home-container">
+    <table id="dataTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+            @for(person of DataFromParent; track $index){
+                <tr><td>{{person.name}}</td><td >{{person.age}}</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

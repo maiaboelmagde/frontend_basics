@@ -1,0 +1,15 @@
+<div id="form-outer-container">
+    <form id="form-container">
+        <p>Name : </p>
+        <input type="text" placeholder="type the name here" [(ngModel)]="name" name="name">
+        <div *ngIf="showNameError">
+            <p style="color: red;"> Invalid Name !!</p>
+        </div>
+        <p>Age : </p>
+        <input type="text" placeholder="type the age here" [(ngModel)]="age" name="age">
+        <div *ngIf="showAgeError">
+            <p style="color: red;"> Invalid Age !!</p>
+        </div>
+        <input type="submit" (click)="passData()">
+    </form>
+</div>

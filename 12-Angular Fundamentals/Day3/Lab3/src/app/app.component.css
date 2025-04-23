@@ -1,0 +1,8 @@
+div{
+    height: 90dvh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    border-radius: 20px;
+    padding: 4vh 2vw;
+    margin: 0;
+}
