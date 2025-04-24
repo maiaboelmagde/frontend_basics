@@ -1,0 +1,12 @@
+<div class="d-flex flex-wrap gap-4 justify-content-center mt-2">
+    @for ( product of ProductsList; track $index) {
+      <div class="card shadow-lg" style="width: 22rem;">
+        <img [src]="product.productImgUrl" class="card-img-top" alt="{{ product.productName }}" style="height: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.productName }}</h5>
+          <p class="card-text">{{ product.productDisc }}</p>
+          <p class="text-warning mb-0">⭐ {{ product.productRate }}/5</p>
+        </div>
+      </div>
+    }
+</div>
