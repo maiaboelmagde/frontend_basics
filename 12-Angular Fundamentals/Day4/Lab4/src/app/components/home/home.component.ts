@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnChanges{
+
+  @Input() recievedProduct:any;
 
   ProductsList:{productName:string, productDisc:string, productImgUrl:string, productRate:number}[]=[
     {
@@ -41,6 +44,12 @@ export class HomeComponent {
       productRate: 3
     }
   ];
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if(!changes['recievedProduct'].firstChange){
+      this.ProductsList.push(this.recievedProduct);
+    }
+  }
 }
 
 

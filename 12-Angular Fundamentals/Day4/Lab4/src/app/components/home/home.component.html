@@ -5,7 +5,9 @@
         <div class="card-body">
           <h5 class="card-title">{{ product.productName }}</h5>
           <p class="card-text">{{ product.productDisc }}</p>
-          <p class="text-warning mb-0">⭐ {{ product.productRate }}/5</p>
+          <p class="text-warning mb-0"><span *ngFor="let star of [].constructor(product.productRate); let i = index">
+            ⭐
+          </span> {{ product.productRate }}/5</p>
         </div>
       </div>
     }
