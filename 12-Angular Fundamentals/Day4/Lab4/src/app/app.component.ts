@@ -5,7 +5,7 @@ import { FormComponent } from './components/form/form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,HomeComponent,FormComponent],
+  imports: [HomeComponent,FormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
