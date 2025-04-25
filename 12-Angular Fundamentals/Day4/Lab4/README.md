@@ -1,5 +1,9 @@
 # Lab4
 
+
+https://github.com/user-attachments/assets/c3d63868-57c5-43cd-88f0-8d152fcb70d2
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
 ## Development server
