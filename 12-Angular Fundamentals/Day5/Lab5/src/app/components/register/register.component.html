@@ -1,25 +1,41 @@
-<div class="d-flex justify-content-center align-items-center min-vh-100 bg-info-subtle">
-    <form class="bg-white p-5 rounded shadow-sm" style="width: 100%; max-width: 500px;">
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-info-subtle p-5">
+    <form class="bg-white p-5 rounded shadow-sm" 
+          style="width: 100%; max-width: 500px;" 
+          [formGroup]="myValidation" 
+          (ngSubmit)="sentData()">
+  
       <h2 class="text-center mb-4">Register</h2>
   
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" formControlName="name">
+        <div *ngIf="myValidation.controls.name.invalid && myValidation.controls.name.touched">
+          <p class="text-danger">Name should be at least 5 characters</p>
+        </div>
       </div>
   
       <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
-        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+        <input type="email" id="email" class="form-control" placeholder="Enter your email" formControlName="email">
+        <div *ngIf="myValidation.controls.email.invalid && myValidation.controls.email.touched">
+          <p class="text-danger">Invalid email format</p>
+        </div>
       </div>
   
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input type="password" id="password" class="form-control" placeholder="Enter your password">
+        <input type="password" id="password" class="form-control" placeholder="Enter your password" formControlName="password">
+        <div *ngIf="myValidation.controls.password.invalid && myValidation.controls.password.touched">
+          <p class="text-danger">Password must be at least 8 characters</p>
+        </div>
       </div>
   
-      <div class="mb-4">
+      <div class="mb-3">
         <label for="confirmPassword" class="form-label">Confirm Password</label>
-        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password">
+        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" formControlName="confirmPassword">
+        <div *ngIf="myValidation.controls.confirmPassword.invalid && myValidation.controls.confirmPassword.touched">
+          <p class="text-danger">Please confirm your password</p>
+        </div>
       </div>
   
       <div class="d-grid">
@@ -27,5 +43,5 @@
       </div>
   
     </form>
-  </div>
+</div>
   
