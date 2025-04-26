@@ -9,6 +9,6 @@ const StudentSchema = new mongoose.Schema({
     "CourseID":{type:String , ref:'Course',required: true }
     }],
   "grade" : Number
-});
+},{versionKey: false}); // remove __v field from schema);
 
 module.exports = mongoose.model('Student',StudentSchema,'Student');
