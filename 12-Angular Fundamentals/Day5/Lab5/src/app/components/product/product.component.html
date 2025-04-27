@@ -1,4 +1,4 @@
-<div class="bg-info-subtle">
-    <app-form></app-form>
-    <app-home></app-home>
+<div class="bg-info-subtle p-5">
+    <app-form (passDataEvent) = "getData($event)"></app-form>
+    <app-home [recievedProduct]="productFromForm"></app-home>
 </div>
