@@ -3,7 +3,6 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 const RecipeCard = ({ name, thumbnail, description }) => {
-  console.log({ name, thumbnail, description });
   return (
     <Card className="h-100 w-25 m-3">
       <Card.Img variant="top" src={thumbnail} style={{ height: '200px', objectFit: 'cover' }} />
